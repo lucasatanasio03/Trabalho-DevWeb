@@ -1,0 +1,65 @@
+#redes_sociais{
+    display: grid;
+    grid-template-columns: 20% 100px 40px 100px 40px 100px 20%;
+    background-color: #3C77C4;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+
+}
+
+#redes_sociais a .redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+#redes_sociais .redes{
+    background-color: white;
+    border-radius: 50%;
+    height: 100px;
+}
+
+#informacoes {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    font-family: 'inter';
+    background-color: #333333;
+    color: white;
+}
+
+#informacoes .informacao a{
+    text-decoration: none;
+    color: white;
+}
+
+.newsletter input{
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgb(197, 197, 197);
+}
+.newsletter button{
+     border-radius: 5px;
+}
+
+.pagamento{
+    display: grid;
+    grid-template-columns: 20% 10% 10% 10% 10% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: left; 
+    background-color: #333333;
+    color: white;
+}
+
+.pagamento h4{
+    font-size: 20px;
+}
+
+#linha{
+    background-color: white;
+    width: 100000px;
+    height: 2px; 
+}

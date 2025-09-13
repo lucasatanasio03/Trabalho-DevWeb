@@ -1,0 +1,14 @@
+Projeto DesWeb
+
+The Shirt Club -
+
+Página de vendas
+    Camisas de times
+        Adidas, nike, puma e newbalance
+Anúncio
+Cadastro
+    Nome completo, CPF, endereço (Rua, número, CEP, Cidade, Estado) e-mail e senha
+Login
+    e-mail ou CPF e senha
+
+Disposição de elementos

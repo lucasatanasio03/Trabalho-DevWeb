@@ -1,0 +1,1040 @@
+.amostra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width:1200px) {
+    .painel {
+        margin-right: 0;
+        margin-left: 10px;
+        padding: 0;
+        width: 70%;
+        background-color: #3C77C4;
+        height: 20%;
+        border-radius: 25px;
+        margin-top: 3%;
+        justify-items: center;
+    }
+
+    .imagens,
+    .imgum {
+        margin: 15px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 65%;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .imgdois {
+        margin: 1%;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 29%;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .modelo>p {
+        border-bottom: black 1px solid;
+    }
+
+    .modelo {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        font-size: 40px;
+        margin-left: 80px;
+        margin-right: 80px;
+        align-items: center;
+        justify-items: left;
+    }
+
+    .tamanhos_container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+
+    }
+
+    .guia_tamanhos {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        font-size: 20px;
+        margin-top: 10%;
+        margin-bottom: 10px;
+        margin-left: 25%;
+        cursor: pointer;
+    }
+
+    .guia_tamanhos label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .guia_tamanhos img {
+        margin-left: -10px;
+        align-items: center;
+        width: 40px;
+        cursor: pointer;
+
+    }
+
+    .modal_guia {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(82, 82, 82, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        backdrop-filter: blur(8px);
+    }
+
+    #guia-modal-toggle:checked+.modal_guia {
+        display: flex;
+
+    }
+
+    .modal_guia .modal-content {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        min-width: 300px;
+        max-width: 90vw;
+        position: relative;
+        text-align: center;
+    }
+
+    .modal_guia .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    .tamanhos {
+        border-radius: 15px;
+        width: 110px;
+        height: 50px;
+        background-color: rgb(160, 156, 156);
+        margin: 1%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        font-size: 80%;
+        cursor: pointer;
+
+    }
+
+    .texto_valores>h5 {
+        margin-top: -30px;
+        border-bottom: 1px solid #000;
+        width: 50%;
+    }
+
+    .texto_valores>p {
+        margin-top: -30px;
+        font-size: 40px;
+    }
+
+    .carrinho_compra button {
+        border: none;
+        background: none;
+        box-shadow: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .carrinho_compra {
+        margin-top: -20px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: left;
+        padding-left: 5px;
+        width: 80%;
+        height: 50px;
+        background-color: black;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .carrinhoimg {
+        width: 30px;
+        height: 30px;
+        margin-left: 50px;
+        margin-top: 10px;
+        padding-right: 5px;
+    }
+
+    .salvar {
+        margin-top: -10px;
+        margin-left: 30px;
+        display: flex;
+        flex-wrap: wrap-no wrap;
+    }
+
+    .acoes {
+        display: flex;
+        align-items: center;
+        /* Alinha verticalmente */
+        gap: 20px;
+        /* Espaço entre os elementos */
+    }
+
+    .salvar img {
+        width: 80px;
+        /* Altere para o tamanho desejado */
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .info {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .personalizar {
+        border-radius: 5px;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        margin-top: 10px;
+        width: 280px;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    .fretes {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 80px;
+        align-items: center;
+        display: flex;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .fretes img {
+        margin: -10px;
+        width: 30px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .Texto_info {
+        margin-right: 80px;
+        font-size: 20px;
+        text-align: justify;
+        padding: 1px;
+    }
+
+    .imgum,
+    .imgdois {
+        transition: transform 0.3s ease;
+    }
+
+    .imgum:hover,
+    .imgdois:hover {
+        transform: scale(1.2);
+        /* Aumenta 20% ao passar o mouse */
+        z-index: 2;
+    }
+
+    .tamanhos:hover,
+    .tamanhos:focus {
+        background-color: #3C77C4;
+        color: #fff;
+        border: 1px solid #000;
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(82, 82, 82, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        backdrop-filter: blur(8px);
+    }
+
+    #modal-toggle:checked+.modal {
+        display: flex;
+    }
+
+    .modal-content {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        min-width: 500px;
+        min-height: 150px;
+        max-height: 90%;
+        position: relative;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    .img_personalizacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .img_personalizacao>img {
+        width: 50%;
+        margin-right: 20px;
+        border: #333 1px solid;
+        border-radius: 10px;
+        padding: 1%;
+    }
+
+    .Personalizacaocontainer {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        border: #333 1px solid;
+        border-radius: 10px;
+        padding: 0px;
+    }
+
+    .Personalizacao {
+        width: 100%;
+        margin: 5px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+
+
+
+
+    }
+
+    .Boxe_Personalizacao {
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 10px;
+        width: 200px;
+        height: 15%;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #3C77C4;
+        margin: 40px;
+        font-size: 30px;
+    }
+
+    .Boxe_Personalizacao>img {
+        margin-top: 20px;
+        width: 50px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: -20px;
+    }
+
+    .preencher {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+.pnome,
+.pnum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.pnome>input,
+.pnum input {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #3C77C4;
+    border-radius: 5px;
+    border: none;
+}
+}
+@media (max-width:1199px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    .painel {
+        width: 98%;
+        margin: 10px auto;
+        height: auto;
+        border-radius: 15px;
+        background-color: #3C77C4;
+        padding: 0;
+        justify-items: center;
+    }
+
+    .imagens,
+    .imgum {
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .imgdois {
+        width: 48%;
+        margin: 1% 0;
+        border-radius: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+
+    .modelo {
+        width: 98%;
+        font-size: 24px;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .modelo>p {
+        border-bottom: black 1px solid;
+    }
+
+    .tamanhos_container {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+    }
+
+    .guia_tamanhos {
+        font-size: 16px;
+        margin: 20px auto;
+        margin-left: 0;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .guia_tamanhos label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .guia_tamanhos img {
+        width: 30px;
+        margin-left: 0;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .modal_guia {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(82, 82, 82, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        backdrop-filter: blur(8px);
+    }
+
+    #guia-modal-toggle:checked ~ .modal_guia {
+        display: flex;
+    }
+
+    .modal_guia .modal-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        min-width: 220px;
+        max-width: 90vw;
+        position: relative;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .modal_guia .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    .tamanhos {
+        border-radius: 10px;
+        width: 80px;
+        height: 40px;
+        background-color: rgb(160, 156, 156);
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .texto_valores>h5 {
+        width: 80%;
+        font-size: 18px;
+        margin-top: -10px;
+        border-bottom: 1px solid #000;
+    }
+
+    .texto_valores>p {
+        font-size: 20px;
+        margin-top: -10px;
+    }
+
+    .carrinho_compra {
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        background-color: black;
+        cursor: pointer;
+        padding-left: 5px;
+    }
+
+    .carrinho_compra>button {
+        font-size: 16px;
+        color: white;
+        border: none;
+        background: none;
+        box-shadow: none;
+        cursor: pointer;
+    }
+
+    .carrinhoimg {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        margin-top: 8px;
+        padding-right: 5px;
+    }
+
+    .salvar {
+        margin-left: 10px;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .salvar img {
+        width: 40px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .acoes {
+        gap: 10px;
+        flex-direction: row;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    .personalizar {
+        width: 180px;
+        font-size: 16px;
+        margin-right: 0;
+        margin-top: 10px;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .fretes {
+        font-size: 16px;
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .fretes img {
+        width: 20px;
+        margin-left: 5px;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .Texto_info {
+        font-size: 16px;
+        margin-right: 0;
+        text-align: justify;
+        padding: 1px;
+    }
+
+    .imgum,
+    .imgdois {
+        transition: transform 0.3s ease;
+    }
+
+    .imgum:hover,
+    .imgdois:hover {
+        transform: scale(1.2);
+        z-index: 2;
+    }
+
+    .tamanhos:hover,
+    .tamanhos:focus {
+        background-color: #3C77C4;
+        color: #fff;
+        border: 1px solid #000;
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(82, 82, 82, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        backdrop-filter: blur(8px);
+    }
+
+    #modal-toggle:checked ~ .modal {
+        display: flex;
+    }
+
+    .modal-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        min-width: 220px;
+        min-height: 120px;
+        max-width: 90vw;
+        max-height: 90vh;
+        position: relative;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    .img_personalizacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img_personalizacao>img {
+        width: 40%;
+        margin-right: 10px;
+        border: #333 1px solid;
+        border-radius: 10px;
+        padding: 1%;
+    }
+
+    .Personalizacaocontainer {
+        font-size: 40px;
+        padding: 1px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        justify-content: center;
+        align-items: center;
+        border: #333 1px solid;
+        border-radius: 10px;
+    }
+
+    .Personalizacao {
+        font-size: 18px;
+        width: 100%;
+        margin: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Boxe_Personalizacao {
+        width: 150px;
+        font-size: 18px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #3C77C4;
+    }
+
+    .Boxe_Personalizacao>img {
+        width: 30px;
+        margin-top: 10px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: -10px;
+    }
+
+    .preencher {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .pnome>input,
+    .pnum input {
+        width: 90%;
+        font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #3C77C4;
+        border-radius: 5px;
+        border: none;
+    }
+}
+#redes_sociais{
+    display: grid;
+    grid-template-columns: 20% 100px 40px 100px 40px 100px 20%;
+    background-color: #3C77C4;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+
+}
+
+#redes_sociais a .redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+#redes_sociais .redes{
+    background-color: white;
+    border-radius: 50%;
+    height: 100px;
+}
+
+#informacoes {
+    display: grid;
+    grid-template-columns: 5% 20% 20% 20% 20% 5%;
+    font-family: 'inter';
+    background-color: #333333;
+    color: white;
+}
+
+#informacoes .informacao a{
+    text-decoration: none;
+    color: white;
+}
+
+.newsletter input{
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgb(197, 197, 197);
+}
+.newsletter button{
+     border-radius: 5px;
+}
+
+.pagamento{
+    display: grid;
+    grid-template-columns: 20% 10% 10% 10% 10% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: left; 
+    background-color: #333333;
+    color: white;
+}
+
+.pagamento h4{
+    font-size: 20px;
+    font-family: 'inter';
+}
+
+#linha{
+    background-color: white;
+    width: 100%;
+    height: 2px;
+}
+
+body{
+    margin: 0;
+    padding-top: 115px;
+    font-family: 'inter';
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+#traco{
+    height: 2px;
+    background-color: #333333;
+    width: 10000px;
+}
+
+#frete_gratis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    font-family: 'Inter';
+}
+
+#containner{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 80px;
+}
+
+#todas_camisas{
+    position: relative;
+    display:flex ;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    padding: 15px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#todas_camisas a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+#todas_camisas:hover {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    padding: 15px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#categorias{
+    display:grid ;
+    grid-template-columns: 240px 120px 120px 120px 120px;
+    font-family: 'Inter';
+}
+
+#categorias a{
+    text-decoration: none;
+    color: black;
+
+}
+
+#categorias a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+}
+
+#div_busca{
+    width: 360px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
+
+}
+#div_busca input{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    border-radius: 28px;
+    background-color: rgb(239, 222, 255);
+}
+
+#div_busca svg{
+    position: relative;
+    float: right;
+    width: 30px;
+    height: 30px;
+    top: -45px;
+    right: -25px;
+}
+
+#faca_login{
+    font-family: 'Inter';
+}
+
+#faca_login a{
+    text-decoration: none;
+    display:flex ;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#txt{
+    margin-right: 50px;
+    color: black;
+    margin-top: -10px;
+}
+#txt h4{
+
+    padding-top: 15px;
+}
+#txt p{
+
+
+    margin-top: -10px;
+}
+
+#submenu_drop{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+    background-color: white;
+    height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    border-color: black;
+}
+
+#todas_camisas:hover #submenu_drop {
+    height: auto;
+    overflow: visible;
+}
+
+#submenu{
+    display: grid;
+    grid-template-columns: 15px 80px 80px 80px 80px 80px 10px ;
+    background-color: white;
+    text-align: left;
+    border-radius: 20px;
+}
+
+#marcas{
+    font-family: 'Inter';
+}
+#marcas a p {
+    color: black;
+    margin-top: -15px;
+}
+
+#sexo{
+    font-family: 'Inter';
+    display: block;
+}
+#sexo a p {
+    color: black;
+    margin-top: -15px;
+}
+
+#outlet{
+    font-family: 'Inter';
+    display: block;
+}
+
+#outlet a p {
+    color: black;
+    margin-top: -15px;
+}

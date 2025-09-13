@@ -1,0 +1,466 @@
+
+.free-shipping-bar {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.search-input {
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    width: 250px;
+    font-size: 14px;
+}
+.search-btn {
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-btn:hover {
+    background-color: #1976D2;
+}
+
+.user-actions {
+    display: flex;
+    gap: 15px;
+}
+.user-icon, .cart-icon {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.user-icon:hover, .cart-icon:hover {
+    color: #1E88E5;
+}
+.main-content {
+    background-color: #f5f5f5;
+    min-height: 500px;
+    padding: 30px 0 50px;
+}
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+.logo-shield {
+    width: 50px;
+    height: 60px;
+    background: linear-gradient(135deg, #1E88E5 0%, #1565C0 100%);
+    border-radius: 8px 8px 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.logo-shield::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+    border-radius: 8px 8px 0 8px;
+}
+.logo-t {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    z-index: 1;
+    position: relative;
+}
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1;
+}
+.logo-line {
+    display: block;
+}
+.logo-the, .logo-shirt, .logo-club {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1E88E5;
+    display: block;
+    line-height: 1.1;
+}
+.form-container {
+    max-width: 380px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.form-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f8f8f8;
+    color: #666;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.form-input:focus {
+    outline: none;
+    border-color: #1E88E5;
+    background-color: white;
+}
+.forgot-password {
+    text-align: center;
+    margin: 20px 0;
+}
+.forgot-password a {
+    color: #1E88E5;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+.forgot-password a:hover {
+    color: #1976D2;
+    text-decoration: underline;
+}
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+.signup-link a {
+    color: #1E88E5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.signup-link a:hover {
+    color: #1976D2;
+    text-decoration: underline;
+}
+.social-section {
+    background-color: #1E88E5;
+    padding: 30px 0;
+}
+.social-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    color: #1E88E5;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+body {
+    margin: 0;
+    padding-top: 115px;
+    overflow-x: hidden; 
+    font-family: 'inter';
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+#traco {
+    height: 2px;
+    background-color: #333333;
+    width: 100%;
+}
+
+#frete_gratis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    font-family: 'Inter';
+}
+
+#containner {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 80px;
+    position: relative; 
+}
+
+#todas_camisas {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+#todas_camisas a {
+    text-decoration: none;
+    color: black;
+}
+
+#todas_camisas:hover {
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#categorias {
+    display: flex;
+    gap: 15px;
+    font-family: 'Inter';
+    white-space: nowrap;
+    align-items: center; 
+    padding: 0 10px;
+}
+#categorias a {
+    flex: 0 0 auto;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#div_busca {
+    width: 360px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+#div_busca input {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    border-radius: 28px;
+    background-color: rgb(239, 222, 255);
+}
+
+#div_busca svg {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%; 
+    right: 20px; 
+    transform: translateY(-50%);
+    float: none; 
+}
+
+#faca_login {
+    font-family: 'Inter';
+}
+
+#faca_login a {
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#txt {
+    margin-right: 50px;
+    color: black;
+    margin-top: -10px;
+}
+
+#txt h4 {
+    padding-top: 15px;
+}
+
+#txt p {
+    margin-top: -10px;
+}
+
+#submenu_drop {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    z-index: 1001;
+    display: none;
+    min-width: 300px; 
+    
+}
+
+#todas_camisas:hover #submenu_drop {
+    display: block;
+    
+}
+
+#submenu {
+    display: grid;
+    grid-template-columns: 15px 80px 80px 80px 80px 80px 10px;
+    background-color: white;
+    text-align: left;
+    border-radius: 20px;
+}
+
+#marcas {
+    font-family: 'Inter';
+}
+
+#marcas a p {
+    color: black;
+    margin-top: -15px;
+}
+
+#sexo {
+    font-family: 'Inter';
+    display: block;
+}
+
+#sexo a p {
+    color: black;
+    margin-top: -15px;
+}
+
+#outlet {
+    font-family: 'Inter';
+    display: block;
+}
+
+#outlet a p {
+    color: black;
+    margin-top: -15px;
+}
+
+#redes_sociais {
+    display: grid;
+    grid-template-columns: 20% 100px 40px 100px 40px 100px 20%;
+    background-color: #3C77C4;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+
+#redes_sociais a .redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#redes_sociais .redes {
+    background-color: white;
+    border-radius: 50%;
+    height: 100px;
+}
+
+#informacoes {
+    display: grid;
+    grid-template-columns: 5% 20% 20% 20% 20% 5%;
+    font-family: 'inter';
+    background-color: #333333;
+    color: white;
+}
+
+#informacoes .informacao a {
+    text-decoration: none;
+    color: white;
+}
+
+.newsletter input {
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgb(197, 197, 197);
+}
+
+.newsletter button {
+    border-radius: 5px;
+}
+
+.pagamento {
+    display: grid;
+    grid-template-columns: 20% 10% 10% 10% 10% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-color: #333333;
+    color: white;
+}
+
+.pagamento h4 {
+    font-size: 20px;
+    font-family: 'inter';
+}
+
+#linha {
+    background-color: white;
+    width: 100%;
+    height: 2px;
+}
